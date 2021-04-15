@@ -4,6 +4,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+main {
+  order: 2;
+}
 #logo {
   display: block;
   margin: auto;
@@ -22,4 +26,25 @@ form {
 }
 button {
   width: 150px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  font-size: 12px;
+  padding: 8px;
+}
+nav a {
+  padding-right: 8px;
+}
+nav img {
+  padding-right: 8px;
+  width: 30px;
+}
+nav button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
 }
