@@ -5,12 +5,21 @@
 body {
   height: 100vh;
   text-align: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(56, 56, 56);
+}
+a {
+  text-decoration: none;
+  color: rgb(56, 56, 56);
 }
 #page-flex {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 /*ROW-1******************************************************************************/
 #row-1 {
   flex: 0 0 auto;
@@ -23,7 +32,21 @@ nav {
   margin-top: 6px;
   justify-content: end;
 }
-
+nav button {
+  background-color: rgb(48, 114, 238);
+  color: white;
+  border: none;
+  height: 80%;
+  width: 100px;
+  border-radius: 3px;
+}
+nav img {
+  height: 55%;
+  opacity: 0.65;
+}
+.nav-spacing {
+  margin-right: 8px;
+}
 /*ROW-2******************************************************************************/
 #row-2 {
   flex: 1 0 auto;
@@ -48,7 +71,7 @@ nav {
 /*ROW-5******************************************************************************/
 #row-5 {
   flex: 0 0 auto;
-  height: 120px;
+  height: 90px;
 }
 footer {
   display: flex;
@@ -57,11 +80,29 @@ footer {
 }
 .footer-row {
   height: 50%;
-}
-#bottom-row {
+  background-color: rgb(241, 239, 239);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+#bottom-row {
+  border-top: 1px rgb(209, 209, 209) solid;
 }
 #space-holder-footer {
   flex: 1 0 0px;
+}
+#right-links {
+  display: flex;
+  align-items: center;
+}
+#right-links a {
+  margin-right: 25px;
+}
+#left-links {
+  display: flex;
+  align-items: center;
+}
+#left-links a,
+#top-row p {
+  margin-left: 25px;
 }
