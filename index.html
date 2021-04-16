@@ -8,24 +8,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <img
-        id="logo"
-        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="google logo"
-      />
-      <form action="#">
-        <input id="search-bar" type="text" />
-        <button id="search-btn">Google Search</button>
-        <button id="lucky-btn">I'm Feeling Lucky</button>
-      </form>
-    </main>
-    <nav>
-      <a href="#">Gmail</a>
-      <a href="#">Images</a>
-      <img src="images/round_apps_black_24dp.png" alt="app icon" />
-      <button>Sign In</button>
-    </nav>
-    <footer></footer>
+    <div id="page-flex">
+      <div id="row-1">
+        <nav>
+          <a href="#">Gmail</a>
+          <a href="#">Images</a>
+          <img src="images/round_apps_black_24dp.png" alt="app icon" />
+          <button>Sign In</button>
+        </nav>
+      </div>
+
+      <div id="row-2">
+        <div id="logo">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google logo"
+          />
+        </div>
+      </div>
+
+      <div id="row-3">
+        <form action="#">
+          <input id="search-bar" type="text" /><br />
+          <button id="search-btn">Google Search</button>
+          <button id="lucky-btn">I'm Feeling Lucky</button>
+        </form>
+      </div>
+
+      <div id="row-4"></div>
+
+      <div id="row-5">
+        <footer>
+          <div id="top-row" class="footer-row">
+            <p>Italy</p>
+          </div>
+          <div id="bottom-row" class="footer-row">
+            <div id="left-links">
+              <a href="#">About</a>
+              <a href="#">Advertising</a>
+              <a href="#">Business</a>
+              <a href="#">How Search Work</a>
+            </div>
+            <div id="space-holder-footer"></div>
+            <div id="right-links">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Settings</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
