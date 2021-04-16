@@ -62,6 +62,52 @@ nav img {
 #row-3 {
   flex: 0 0 auto;
 }
+#search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+  height: 44px;
+  margin: auto;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 22px;
+}
+#search-bar:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+#search-bar input {
+  flex: 1 1 auto;
+  border: none;
+}
+#search-bar input:focus-visible {
+  outline: none;
+}
+#search-bar button {
+  background-color: transparent;
+  border: none;
+  height: 50%;
+}
+button img {
+  height: 100%;
+  opacity: 0.4;
+  margin: 0px 12px 0px 12px;
+}
+#search-bar-buttons {
+  display: flex;
+  justify-content: center;
+}
+#search-bar-buttons button {
+  background-color: rgb(241, 239, 239);
+  margin: 8px;
+  width: 140px;
+  height: 35px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+}
+#search-bar-buttons button:hover {
+  border: 1px solid rgb(209, 209, 209);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
 
 /*ROW-4******************************************************************************/
 #row-4 {
