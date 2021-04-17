@@ -170,7 +170,6 @@ footer a {
 }
 #top-row {
   height: 45px;
-  margin-left: 12px;
 }
 .footer-row {
   background-color: var(--dark-area);
@@ -208,7 +207,9 @@ footer a {
   height: 45px;
   margin-left: 12px;
 }
-#left-links a,
-#top-row p {
+#left-links a {
   margin: 12px;
+}
+#top-row p {
+  margin-left: 24px;
 }
