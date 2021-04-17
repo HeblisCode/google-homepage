@@ -26,6 +26,11 @@ a:hover {
   flex-direction: column;
   height: 100%;
 }
+@media (max-width: 385px) {
+  body {
+    width: 385px;
+  }
+}
 
 /*ROW-1******************************************************************************/
 #row-1 {
@@ -37,7 +42,7 @@ nav {
   align-items: center;
   height: 80%;
   margin-top: 6px;
-  justify-content: end;
+  justify-content: flex-end;
 }
 nav button {
   background-color: rgb(48, 114, 238);
@@ -51,10 +56,28 @@ nav button:hover {
   background: #2b7de9;
   box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
     0 1px 3px 1px rgba(66, 133, 244, 0.15);
+  cursor: pointer;
+}
+#hover-circle {
+  position: relative;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+#hover-circle:hover {
+  background-color: var(--darker-area);
 }
 nav img {
-  height: 55%;
+  height: 65%;
   opacity: 0.65;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-51.5%, -51%);
+}
+nav img:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .nav-spacing {
   margin-right: 15px;
@@ -82,6 +105,11 @@ nav img {
   margin: auto;
   border: 1px solid var(--darker-area);
   border-radius: 22px;
+}
+@media (max-width: 590px) {
+  #search-bar {
+    margin: 20px;
+  }
 }
 #search-bar:hover {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
@@ -126,45 +154,61 @@ button img {
   flex: 2 0 auto;
 }
 
-/*ROW-5******************************************************************************/
+/*ROW-5******************************************************************************media query at 600px*/
 #row-5 {
   flex: 0 0 auto;
-  height: 90px;
+  height: auto;
 }
 footer {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   color: var(--light-font-color);
 }
 footer a {
   color: var(--light-font-color);
 }
+#top-row {
+  height: 45px;
+  margin-left: 12px;
+}
 .footer-row {
-  height: 50%;
   background-color: var(--dark-area);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 603px) {
+  #bottom-row {
+    justify-content: space-evenly;
+  }
+  #right-links {
+    margin: 0;
+  }
+  #left-links {
+    margin: 0;
+  }
 }
 #bottom-row {
   border-top: 1px var(--darker-area) solid;
 }
-#space-holder-footer {
-  flex: 1 0 0px;
-}
 #right-links {
   display: flex;
   align-items: center;
+  height: 45px;
+  margin-right: 12px;
 }
 #right-links a {
-  margin-right: 25px;
+  margin: 12px;
 }
 #left-links {
   display: flex;
   align-items: center;
+  height: 45px;
+  margin-left: 12px;
 }
 #left-links a,
 #top-row p {
-  margin-left: 25px;
+  margin: 12px;
 }
